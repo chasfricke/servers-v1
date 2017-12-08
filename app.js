@@ -1,6 +1,3 @@
-const express = require("express");
-const cors = require("cors");
-
 const data =
 [{
     id: 1,
@@ -23,6 +20,11 @@ const data =
     cohortCode: "g110",
     numberOfStudents: 29
   }]
+
+console.log(data);
+
+const express = require("express");
+const cors = require("cors");
 
 function idQuery (data, id) {
   for (var i = 0; i < data.length; i++) {
