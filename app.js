@@ -49,7 +49,7 @@ app.get("/:id", function (request, response) {
       }
     });
   } else {
-    response.json({record});
+    response.json({data: record});
   }
 });
 
