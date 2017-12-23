@@ -1,5 +1,24 @@
-ID,Cohort Name,Cohort Code,Number of Students
-1,17-01-WD-DP,g100,28
-2,17-01-DS-GT,g105,24
-3,17-02-WD-PX,g109,30
-4,17-03-WD-BD,g110,29
+const cohorts =
+[{
+    id: 1,
+    cohortName: "17-01-WD-DP",
+    cohortCode: "g100",
+    numberOfStudents: 28
+  },{
+    id: 2,
+    cohortName: "17-01-DS-GT",
+    cohortCode: "g105",
+    numberOfStudents: 24
+  },{
+    id: 3,
+    cohortName: "17-02-WD-PX",
+    cohortCode: "g109",
+    numberOfStudents: 30
+  },{
+    id: 4,
+    cohortName: "17-03-WD-BD",
+    cohortCode: "g110",
+    numberOfStudents: 29
+}];
+
+module.exports = {cohorts};
