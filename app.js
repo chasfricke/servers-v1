@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const data = "../data/cohorts.js";
+const data = require("./data/cohorts");
 
 function idQuery (data, id) {
   for (var i = 0; i < data.length; i++) {
@@ -13,6 +13,8 @@ function idQuery (data, id) {
 
 const app = express();
 app.use(cors());
+
+//added "data:" below
 
 app.get("/", function (request, response) {
   response.json("data:" {data});
