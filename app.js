@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const data = require("./data/cohorts");
+const app = express();
 
 function idQuery (data, id) {
   for (var i = 0; i < data.length; i++) {
@@ -11,7 +12,6 @@ function idQuery (data, id) {
   return null;
 }
 
-const app = express();
 app.use(cors());
 
 app.get("/", function (request, response) {

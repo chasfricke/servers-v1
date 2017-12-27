@@ -1,4 +1,4 @@
-const cohorts =
+module.exports =
 [{
     id: 1,
     cohortName: "17-01-WD-DP",
@@ -20,5 +20,3 @@ const cohorts =
     cohortCode: "g110",
     numberOfStudents: 29
 }];
-
-module.exports = {cohorts};
