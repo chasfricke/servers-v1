@@ -14,10 +14,8 @@ function idQuery (data, id) {
 const app = express();
 app.use(cors());
 
-//added "data:" below
-
 app.get("/", function (request, response) {
-  response.json("data:" {data});
+  response.json({data});
 });
 
 app.get("/:id", function (request, response) {
